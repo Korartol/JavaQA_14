@@ -29,7 +29,6 @@ public class ProductRepository {
     }
 
 
-
 //    // метод добавления
 //    public void save(Product product) {
 //        Product[] tmp = new Product[products.length + 1];  // создаем временный массив на 1 больше прежнего
@@ -55,7 +54,7 @@ public class ProductRepository {
             }
             products = tmp;  // обновляем products
         } else {
-            throw new  NotFoundException(
+            throw new NotFoundException(
                     "Element with id: " + id + " not found"
             );
         }

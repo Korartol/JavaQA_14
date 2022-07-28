@@ -74,7 +74,7 @@ public class ProductRepositoryTest {
         repo.save(product5);
 
         Assertions.assertThrows(AlreadyExistsException.class, () -> {
-            repo.save(product2);  // добавляем элемент с индексом 2 который уже есть
+            repo.save(product5);  // добавляем элемент с индексом 2 который уже есть
         });
     }
 }
